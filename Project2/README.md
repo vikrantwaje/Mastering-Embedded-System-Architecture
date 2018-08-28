@@ -1,4 +1,3 @@
-# Mastering Embedded System Architecture
 <h3>Title: Designing a Signal Analyzer.</h3>
 
 
