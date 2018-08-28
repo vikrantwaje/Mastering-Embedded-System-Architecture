@@ -1,0 +1,6 @@
+--cpu Cortex-M0+
+".\build\main.o"
+--strict --scatter "mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/MKL25Z4.sct"
+mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/sys.o mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/cmsis_nvic.o mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/system_MKL25Z4.o mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/mbed_overrides.o mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/startup_MKL25Z4.o mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/board.o mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/retarget.o mbed/TARGET_KL25Z/TOOLCHAIN_ARM_STD/mbed.ar --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\build\asm.map" -o .\build\asm.axf

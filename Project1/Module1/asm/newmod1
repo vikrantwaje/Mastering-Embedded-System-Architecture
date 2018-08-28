@@ -1,0 +1,50 @@
+/*----------------------------------------------------------------------------
+LAB EXERCISE 5.1 - PROCESSING TEXT IN ASSEMBLY LANGUAGE
+ ----------------------------------------------
+Examine program execution at the processor level using the debugger 
+ *----------------------------------------------------------------------------*/
+
+
+
+ # include<MKL25Z4.H>
+ void squareroot(int num);
+ int main(void){
+ squareroot(121);
+ }
+ __asm void squareroot(int num){
+			MOVS R5,#0
+			MOVS R1,#0
+			MOVS R2,#65
+			MOVS R4,#0
+	 UP:
+			MOVS R3,R4
+			ADDS R0,R1,R2
+			LSRS R0,R0,#1
+			MULS R7,R4,R7
+			CMPS R7,R0
+			BNE ELSEIF
+			MOVS R5,#1
+	 ELSEIF:
+			CMP R7,R0
+			BHI ELSE
+			MOVS R1,R4
+	 ELSE:
+			MOVS R2,R4
+			CMP R5,#0
+			BNE UP
+			CMP R4,R3
+			BNE UP
+			BX LR
+
+ 
+ 
+ }
+
+/*----------------------------------------------------------------------------
+ MAIN function
+ *----------------------------------------------------------------------------*/
+
+
+}
+
+// *******************************ARM University Program Copyright © ARM Ltd 2014*************************************

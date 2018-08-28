@@ -1,0 +1,6 @@
+<map id="UART_msg_put" name="UART_msg_put">
+<area shape="rect" id="node2" href="$shared_8h.html#a29be7c30b6929c50ebb985b228fc1be2" title="chk_UART_msg" alt="" coords="356,23,472,50"/>
+<area shape="rect" id="node4" href="$shared_8h.html#a826db354ae1d910792a0330f8d4eb91a" title="UART_msg_process" alt="" coords="167,23,308,50"/>
+<area shape="rect" id="node5" href="$shared_8h.html#a59a4a0c8721f73a8c9d9db5a4cdc6e88" title="monitor" alt="" coords="381,74,447,100"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="520,48,571,75"/>
+</map>
